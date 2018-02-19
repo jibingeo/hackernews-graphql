@@ -16,7 +16,12 @@ const getTopStories = () => {
   return getUrl(`https://hacker-news.firebaseio.com/v0/topstories.json`)
 }
 
+const getUser = (username) => {
+  return getUrl(`https://hacker-news.firebaseio.com/v0/user/${username}.json`)
+}
+
 export {
   getItem,
-  getTopStories
+  getTopStories,
+  getUser
 }
